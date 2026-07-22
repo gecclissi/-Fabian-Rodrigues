@@ -435,8 +435,36 @@ h1, h2, h3, h4 { font-family: 'Cinzel', serif; line-height: 1.15; font-weight: 7
   .reading { padding: 28px 22px; }
   .reading h3 { font-size: 1.4rem; }
   .clients-grid { grid-template-columns: repeat(2, 1fr); }
-  .hero { padding-top: 100px; }
+  .hero { padding: 100px 0 56px; min-height: auto; }
   .lb-nav { width: 44px; height: 44px; }
+  .float-card { padding: 9px 13px; }
+  .float-card strong { font-size: 1rem; }
+  .float-card span { font-size: .72rem; }
+  .float-card--1 { top: -12px; left: -4px; }
+  .float-card--2 { bottom: -12px; right: -4px; }
+}
+
+@media (max-width: 480px) {
+  .container { padding: 0 16px; }
+  .hero { padding: 92px 0 48px; }
+  .hero-photo-frame img { width: 250px; }
+  .hero-quote { font-size: 1rem; }
+  .hero-desc { font-size: .98rem; }
+  .hero-actions .btn { width: 100%; }
+  .section { padding: 58px 0; }
+  .section-head { margin-bottom: 40px; }
+  .tab-btns { margin-bottom: 28px; gap: 7px; }
+  .tab-btn { padding: 8px 12px; font-size: .76rem; }
+  .trick-card img { height: 140px; }
+  .illusion-card img { height: 150px; }
+  .clients-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .clients-grid li { padding: 13px 10px; font-size: .84rem; }
+  .included-grid { grid-template-columns: repeat(2, 1fr); }
+  .reading { padding: 22px 16px; }
+  .reading h3 { font-size: 1.25rem; }
+  .contact-line { padding: 15px 16px; }
+  .contact-form { padding: 22px 18px; }
+  .wa-float { width: 52px; height: 52px; right: 16px; bottom: 16px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
